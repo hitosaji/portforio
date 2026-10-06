@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background: #f5f8fc;
+    color: #222;
+}
+
+header {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 64px;
+    margin: 0;
+}
+
+header p {
+    font-size: 20px;
+    letter-spacing: 4px;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+section {
+    min-height: 60vh;
+    padding: 100px 30px;
+}
+
+h2 {
+    font-size: 36px;
+    letter-spacing: 3px;
+}
