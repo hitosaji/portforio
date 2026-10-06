@@ -37,3 +37,24 @@ h2 {
     font-size: 36px;
     letter-spacing: 3px;
 }
+html {
+    scroll-behavior: smooth;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9);
+    z-index: 100;
+}
+
+nav a {
+    margin: 0 20px;
+    text-decoration: none;
+    color: #222;
+    font-weight: bold;
+}
