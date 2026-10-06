@@ -92,30 +92,36 @@ nav a {
 
 /* TAPS */
 .tap-guide {
-    margin-top: 20px;
+    margin-top: 30px;
+    text-align: center;
     cursor: pointer;
 }
 
 .tap-arrows {
-    height: 20px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 .tap-arrows span {
     display: block;
-    width: 10px;
-    height: 10px;
-    border-left: 2px solid #222;
-    border-top: 2px solid #222;
+    width: 14px;
+    height: 14px;
+    border-left: 3px solid #222;
+    border-top: 3px solid #222;
     transform: rotate(45deg);
-    margin: 0 auto -5px;
+    margin-bottom: -8px;
 }
 
 .tap-guide p {
-    margin: 10px 0 0;
-    font-size: 14px;
-    letter-spacing: 3px;
+    margin: 15px 0 0;
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-align: center;
 }
-
 
 /* 画像枚数表示 */
 .work-dots {
