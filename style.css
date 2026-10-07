@@ -86,12 +86,20 @@ nav a {
 /* ゲーム画像 */
 .work-image {
     width: 100%;
+    position: relative;
 }
 
 .work-image img {
     width: 100%;
     display: block;
     cursor: pointer;
+}
+
+.work-img.img2 {
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    width: 100%;
 }
 
 
