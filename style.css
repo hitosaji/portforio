@@ -3,6 +3,9 @@ body {
     font-family: sans-serif;
     background: #f5f8fc;
     color: #222;
+
+    user-select: none;
+    -webkit-user-select: none;
 }
 
 header {
@@ -142,11 +145,10 @@ nav a {
 .work-dots .active {
     background: #222;
 }
+* .work-dots .active {
+    background: #222;
+}
+
 * {
     -webkit-tap-highlight-color: transparent;
-}
-/* 文字の範囲選択を無効にする */
-body {
-    user-select: none;
-    -webkit-user-select: none;
 }
