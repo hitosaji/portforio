@@ -145,3 +145,8 @@ nav a {
 * {
     -webkit-tap-highlight-color: transparent;
 }
+/* 文字の範囲選択を無効にする */
+body {
+    user-select: none;
+    -webkit-user-select: none;
+}
