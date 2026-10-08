@@ -161,5 +161,5 @@ nav a {
     -webkit-tap-highlight-color: transparent;
 }
 .work-img.img1 {
-    width: calc(100% - 20px);
+    width: calc(100% - 10px);
 }
