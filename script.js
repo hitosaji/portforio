@@ -1,15 +1,23 @@
 
-let currentPage = 0;
+const container = document.querySelector(".work-image");
 
-const pages = document.querySelectorAll(
-    ".work-image .work-img, .work-image .work-info"
+const pages = Array.from(
+    container.querySelectorAll(":scope > .work-img, :scope > .work-info")
 );
 
 const dots = document.querySelectorAll(".work-dots span");
 
-function showPage() {
+let currentPage = 0;
+
+function showPages() {
     pages.forEach((page, index) => {
-        page.style.display = index === currentPage ? "block" : "none";
+        const depth = (index - currentPage + pages.length) % pages.length;
+
+        page.style.zIndex = pages.length - depth;
+        page.style.transform = `
+            translate(${depth * 8}px, ${depth * -8}px)
+            scale(${1 - depth * 0.03})
+        `;
     });
 
     dots.forEach((dot, index) => {
@@ -17,9 +25,13 @@ function showPage() {
     });
 }
 
-showPage();
+showPages();
 
-document.querySelector(".work-image").addEventListener("click", () => {
+container.addEventListener("click", (event) => {
+    if (event.target.closest("a")) {
+        return;
+    }
+
     currentPage = (currentPage + 1) % pages.length;
-    showPage();
+    showPages();
 });
