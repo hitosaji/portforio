@@ -13,13 +13,15 @@ function showPages() {
     pages.forEach((page, index) => {
         const depth = (index - currentPage + pages.length) % pages.length;
 
-        page.style.zIndex = pages.length - depth;
-       const scales = [1, 0.88, 0.82];
+        const xPositions = [0, -8, -16];
+        const yPositions = [0, -8, -16];
+        const scales = [1, 0.88, 0.82];
 
-page.style.transform = `
-    translate(${depth * 8 - (depth > 0 ? 16 : 0)}px, ${depth * -8}px)
-    scale(${scales[depth]})
-`;
+        page.style.zIndex = pages.length - depth;
+        page.style.transform = `
+            translate(${xPositions[depth]}px, ${yPositions[depth]}px)
+            scale(${scales[depth]})
+        `;
     });
 
     dots.forEach((dot, index) => {
