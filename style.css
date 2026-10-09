@@ -150,14 +150,17 @@ nav a {
     justify-content: flex-end;
 }
 
+
 .tap-arrows span {
     display: block;
-    width: 14px;
-    height: 14px;
+    flex: 0 0 10px;
+    width: 10px;
+    height: 10px;
+    box-sizing: border-box;
     border-left: 3px solid #222;
     border-top: 3px solid #222;
     transform: rotate(45deg);
-    margin-bottom: -8px;
+    margin: 0 0 -5px;
 }
 
 .tap-guide p {
