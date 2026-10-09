@@ -84,22 +84,52 @@ nav a {
 
 
 /* ゲーム画像 */
+
+/* カード全体 */
 .work-image {
     width: 100%;
+    aspect-ratio: 3 / 2;
     position: relative;
+    isolation: isolate;
+    margin-bottom: 16px;
 }
 
-.work-image img {
+/* 3枚のカード */
+.work-image > .work-img,
+.work-image > .work-info {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    display: block;
+    height: 100%;
+    box-sizing: border-box;
+    border-radius: 8px;
+    transition: transform 0.4s ease;
+}
+
+/* ゲーム画像 */
+.work-image > .work-img {
+    object-fit: contain;
+    cursor: pointer;
+    background: #f5f8fc;
+}
+
+/* 概要ページ */
+.work-image > .work-info {
+    overflow-y: auto;
+    padding: 24px;
+    background: #fff;
+    border: 1px solid #d5dfec;
+    text-align: left;
     cursor: pointer;
 }
 
-.work-img.img2 {
-    position: absolute;
-    top: -10px;
-    right: -10px;
-    width: 95%;
+.work-info h4 {
+    margin-bottom: 6px;
+}
+
+.work-info p {
+    margin-top: 0;
 }
 
 
