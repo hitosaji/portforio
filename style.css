@@ -168,17 +168,24 @@ nav a {
 }
 
 /* 画像枚数表示 */
+
 .work-dots {
     margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: nowrap;
 }
 
 .work-dots span {
-    display: inline-block;
+    display: block;
+    flex-shrink: 0;
     width: 7px;
     height: 7px;
     border-radius: 50%;
     background: #bbb;
-    margin: 0 5px;
+    margin: 0;
 }
 
 .work-dots .active {
