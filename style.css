@@ -109,9 +109,10 @@ nav a {
 
 /* ゲーム画像 */
 .work-image > .work-img {
-    object-fit: contain;
+    object-fit: cover;
+    object-position: center;
     cursor: pointer;
-    background: #f5f8fc;
+    background: transparent;
 }
 
 /* 概要ページ */
