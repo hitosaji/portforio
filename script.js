@@ -14,10 +14,12 @@ function showPages() {
         const depth = (index - currentPage + pages.length) % pages.length;
 
         page.style.zIndex = pages.length - depth;
-        page.style.transform = `
-            translate(${depth * 8}px, ${depth * -8}px)
-            scale(${1 - depth * 0.03})
-        `;
+       const scales = [1, 0.88, 0.82];
+
+page.style.transform = `
+    translate(${depth * 8}px, ${depth * -8}px)
+    scale(${scales[depth]})
+`;
     });
 
     dots.forEach((dot, index) => {
