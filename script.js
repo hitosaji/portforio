@@ -17,7 +17,7 @@ function showPages() {
        const scales = [1, 0.88, 0.82];
 
 page.style.transform = `
-    translate(${depth * 8}px, ${depth * -8}px)
+    translate(${depth * 8 - (depth > 0 ? 16 : 0)}px, ${depth * -8}px)
     scale(${scales[depth]})
 `;
     });
