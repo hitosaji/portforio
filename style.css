@@ -267,16 +267,18 @@ header .role {
 header .handle-name {
     font-family: inherit;
     font-size: 64px;
+    font-weight: normal;
     margin: 45px 0 4px;
     letter-spacing: 3px;
 }
+
 header .handle-label {
-    font-size: 12px;
-    letter-spacing: 2px;
+    font-family: inherit;
+    font-size: 24px;
+    letter-spacing: 3px;
     margin: 0;
     color: #777;
 }
-
 #links {
     display: none;
 }
