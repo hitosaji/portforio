@@ -1,13 +1,15 @@
+
 body {
     margin: 0;
     font-family: sans-serif;
     background: #f5f8fc;
     color: #222;
-
     user-select: none;
     -webkit-user-select: none;
+    -webkit-tap-highlight-color: transparent;
 }
 
+/* ヘッダー */
 header {
     height: 100vh;
     display: flex;
@@ -26,6 +28,7 @@ header p {
     letter-spacing: 4px;
 }
 
+/* 全体 */
 main {
     max-width: 900px;
     margin: 0 auto;
@@ -41,12 +44,9 @@ h2 {
     letter-spacing: 3px;
 }
 
-
-/* スクロール */
 html {
     scroll-behavior: smooth;
 }
-
 
 /* ナビゲーション */
 nav {
@@ -67,7 +67,6 @@ nav a {
     font-weight: bold;
 }
 
-
 /* WORKS */
 .work-card {
     text-align: center;
@@ -79,13 +78,10 @@ nav a {
     font-size: 28px;
     margin: 0 0 30px;
     text-align: left;
-    padding-left: 0px;
+    padding-left: 0;
 }
 
-
-/* ゲーム画像 */
-
-/* カード全体 */
+/* ゲーム画像・カード */
 .work-image {
     width: 100%;
     aspect-ratio: 3 / 2;
@@ -94,7 +90,6 @@ nav a {
     margin-bottom: 16px;
 }
 
-/* 3枚のカード */
 .work-image > .work-img,
 .work-image > .work-info {
     position: absolute;
@@ -107,12 +102,15 @@ nav a {
     transition: transform 0.4s ease;
 }
 
-/* ゲーム画像 */
 .work-image > .work-img {
     object-fit: cover;
     object-position: center;
     cursor: pointer;
     background: transparent;
+}
+
+.work-img.img1 {
+    width: calc(100% - 20px);
 }
 
 /* 概要ページ */
@@ -133,14 +131,12 @@ nav a {
     margin-top: 0;
 }
 
-
-/* TAPS */
+/* TAPS・矢印 */
 .tap-guide {
     margin-top: 30px;
     text-align: center;
     cursor: pointer;
 }
-
 
 .tap-arrows {
     height: 30px;
@@ -149,8 +145,6 @@ nav a {
     align-items: center;
     justify-content: flex-end;
 }
-
-
 
 .tap-arrows span {
     display: block;
@@ -173,7 +167,6 @@ nav a {
 }
 
 /* 画像枚数表示 */
-
 .work-dots {
     display: flex;
     flex-direction: row;
@@ -200,16 +193,7 @@ nav a {
     background: #222;
 }
 
-
-
-* {
-    -webkit-tap-highlight-color: transparent;
-}
-.work-img.img1 {
-    width: calc(100% - 20px);
-}
-
-/* ABOUTとWORKSの間隔を調整 */
+/* ABOUTとWORKSの間隔 */
 #about {
     min-height: auto;
     padding-bottom: 30px;
@@ -218,8 +202,22 @@ nav a {
 #works {
     min-height: auto;
     padding-top: 30px;
+    padding-bottom: 30px;
 }
 
+/* SKILLSとLINKS */
+#skills {
+    min-height: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#links {
+    min-height: auto;
+    padding-top: 30px;
+}
+
+/* スマホ用の余白 */
 @media screen and (max-width: 768px) {
     #about {
         min-height: auto;
@@ -228,51 +226,21 @@ nav a {
 
     #works {
         min-height: auto;
-        padding: 30px 30px 100px;
-    }
-}
-
-#works {
-    padding-bottom: 30px;
-}
-
-#skills {
-    padding-top: 30px;
-}
-
-@media screen and (max-width: 768px) {
-    #works {
-        padding-bottom: 0 !important;
+        padding: 30px 30px 0;
     }
 
     #works .tap-guide {
-        margin-bottom: 0;
         margin-top: 10px;
+        margin-bottom: 0;
     }
 
     #skills {
-        padding-top: 10px !important;
-    }
-}
-
-    #skills {
-        padding-bottom: 0 !important;
+        min-height: auto;
+        padding: 10px 30px 0;
     }
 
     #links {
-        padding-top: 0 !important;
+        min-height: auto;
+        padding: 0 30px 100px;
     }
-@media screen and (max-width: 768px) {
-    #works {
-        padding-bottom: 0 !important;
-    }
-
-    #works .tap-guide {
-        margin-bottom: 0;
-        margin-top: 10px;
-    }
-
-    #skills {
-        padding-top: 10px !important;
-        padding-bottom: 0 !important;
-    }
+}
