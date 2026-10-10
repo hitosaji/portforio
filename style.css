@@ -265,11 +265,11 @@ header .role {
 }
 
 header .handle-name {
+    font-family: inherit;
     font-size: 40px;
     margin: 45px 0 4px;
     letter-spacing: 3px;
 }
-
 header .handle-label {
     font-size: 12px;
     letter-spacing: 2px;
