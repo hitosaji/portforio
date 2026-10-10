@@ -239,3 +239,13 @@ nav a {
 #skills {
     padding-top: 30px;
 }
+
+@media screen and (max-width: 768px) {
+    #works {
+        padding-bottom: 10px !important;
+    }
+
+    #skills {
+        padding-top: 10px !important;
+    }
+}
