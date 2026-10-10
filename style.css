@@ -242,7 +242,12 @@ nav a {
 
 @media screen and (max-width: 768px) {
     #works {
-        padding-bottom: 10px !important;
+        padding-bottom: 0 !important;
+    }
+
+    #works .tap-guide {
+        margin-bottom: 0;
+        margin-top: 10px;
     }
 
     #skills {
