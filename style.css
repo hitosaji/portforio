@@ -254,3 +254,25 @@ nav a {
         padding-top: 10px !important;
     }
 }
+
+    #skills {
+        padding-bottom: 0 !important;
+    }
+
+    #links {
+        padding-top: 0 !important;
+    }
+@media screen and (max-width: 768px) {
+    #works {
+        padding-bottom: 0 !important;
+    }
+
+    #works .tap-guide {
+        margin-bottom: 0;
+        margin-top: 10px;
+    }
+
+    #skills {
+        padding-top: 10px !important;
+        padding-bottom: 0 !important;
+    }
