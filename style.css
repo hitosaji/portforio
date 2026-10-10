@@ -209,7 +209,13 @@ nav a {
     width: calc(100% - 20px);
 }
 
-/* ABOUTとWORKSの間隔 */
+/* ABOUTとWORKSの間隔を調整 */
+#about {
+    min-height: auto;
+    padding-bottom: 30px;
+}
+
 #works {
-    padding-top: 40px;
+    min-height: auto;
+    padding-top: 30px;
 }
