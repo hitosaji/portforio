@@ -217,7 +217,7 @@ nav a {
     padding-top: 30px;
 }
 
-```css
+css
 /* スマホ用の余白調整 */
 @media screen and (max-width: 768px) {
     #about {
@@ -257,7 +257,27 @@ nav a {
         padding: 0 30px 100px;
     }
 }
+/* ヘッダーの名前と肩書き */
+header .role {
+    font-size: 24px;
+    letter-spacing: 5px;
+    margin: 18px 0 32px;
+}
+
+header .handle-name {
+    font-size: 40px;
+    margin: 45px 0 4px;
+    letter-spacing: 3px;
+}
+
+header .handle-label {
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin: 0;
+    color: #777;
+}
+
 #links {
     display: none;
 }
-```
+
