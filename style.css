@@ -208,3 +208,8 @@ nav a {
 .work-img.img1 {
     width: calc(100% - 20px);
 }
+
+/* ABOUTとWORKSの間隔 */
+#works {
+    padding-top: 40px;
+}
