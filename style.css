@@ -219,3 +219,15 @@ nav a {
     min-height: auto;
     padding-top: 30px;
 }
+
+@media screen and (max-width: 768px) {
+    #about {
+        min-height: auto;
+        padding-bottom: 20px;
+    }
+
+    #works {
+        min-height: auto;
+        padding-top: 20px;
+    }
+}
